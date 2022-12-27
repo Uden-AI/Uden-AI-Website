@@ -1,0 +1,4 @@
+                                <a href="index.html"><img style="height:52px" src="assets/img/logo/logo2_footer.png" alt=""></a>
+								
+
+Header & Footer: style="height:52px"
