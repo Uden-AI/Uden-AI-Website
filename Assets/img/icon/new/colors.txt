@@ -1,2 +1,0 @@
-Color1: 9f78ff
-Color2: f067ff
