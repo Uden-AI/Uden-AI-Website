@@ -1,0 +1,51 @@
+_/\/\____/\/\________/\/\__________________________________/\/\______/\/\/\/\_
+_/\/\____/\/\________/\/\____/\/\/\____/\/\/\/\__________/\/\/\/\______/\/\___
+_/\/\____/\/\____/\/\/\/\__/\/\/\/\/\__/\/\__/\/\______/\/\____/\/\____/\/\___
+_/\/\____/\/\__/\/\__/\/\__/\/\________/\/\__/\/\______/\/\/\/\/\/\____/\/\___
+___/\/\/\/\______/\/\/\/\____/\/\/\/\__/\/\__/\/\______/\/\____/\/\__/\/\/\/\_
+______________________________________________________________________________
+The humans.txt file explains the team, technology,
+and graphic assets behind this site humanstxt.org.
+
+_______________________________________________________________________________
+
+DESIGNER |
+
+Erik Uden
+Modified the page's contents
+
+Colorlib / Aigars Silkalns
+Created the webpage
+
+Design tools:
+Notepad++
+Unsplash
+
+github.com/ErikUden/
+github.com/Uden-AI/
+
+_______________________________________________________________________________
+
+TECHNOLOGY |
+
+HTML
+CSS
+JS
+Bootstrap
+FontAwesome
+JQuery
+
+_______________________________________________________________________________
+
+FONTS |
+
+Open Sans
+BlinkMacSystemFont
+Segoe UI
+Roboto
+Helvetica Neue
+Arial
+Apple Color Emoji
+Segoe UI Emoji
+Segoe UI Symbol
+Noto Color Emoji
