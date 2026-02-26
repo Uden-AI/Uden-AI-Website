@@ -1,27 +1,26 @@
 body, html {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh; /* Using vh ensures it always matches the viewport height */
     background-color: #080808;
     overflow: hidden; 
     font-family: 'Courier New', Courier, monospace;
-    perspective: 1200px; 
+    
+    /* Bulletproof Flexbox Centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Styling for the giant centered text */
 #center-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Perfect dead-center alignment */
-    font-size: clamp(4rem, 10vw, 12rem); /* Scales with screen size */
+    font-size: clamp(4rem, 10vw, 12rem); 
     font-weight: bold;
-    color: #FF0000; /* Uses the first red from your palette */
+    color: #FF0000; 
     text-shadow: 0 0 20px #FF0000, 0 0 50px #6F003C;
-    z-index: 10; /* Keeps it layered above the flying text */
+    z-index: 10; 
     text-align: center;
-    pointer-events: none; /* Lets you click through it if we add interactivity later */
+    pointer-events: none; 
 }
 
 #canvas-container {
@@ -30,8 +29,10 @@ body, html {
     left: 0;
     width: 100vw;
     height: 100vh;
+    perspective: 1200px; /* Moved the 3D perspective here */
     transform-style: preserve-3d;
-    z-index: 1; /* Keeps flying text behind the center text (mostly) */
+    z-index: 1; 
+    pointer-events: none; /* Ensures the background doesn't block clicks */
 }
 
 .text-element {
@@ -41,6 +42,8 @@ body, html {
     user-select: none;
     pointer-events: none;
     animation: float linear infinite;
+    top: 0;
+    left: 0;
 }
 
 @keyframes float {
