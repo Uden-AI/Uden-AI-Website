@@ -1,13 +1,19 @@
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 900; 
+    src: url('fonts/work-sans-latin-900-normal.woff2') format('woff2');
+    font-display: swap;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh; /* Using vh ensures it always matches the viewport height */
+    height: 100vh;
     background-color: #080808;
     overflow: hidden; 
-    font-family: 'Courier New', Courier, monospace;
-    
-    /* Bulletproof Flexbox Centering */
+    font-family: 'Work Sans', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,10 +35,10 @@ body, html {
     left: 0;
     width: 100vw;
     height: 100vh;
-    perspective: 1200px; /* Moved the 3D perspective here */
+    perspective: 1200px; 
     transform-style: preserve-3d;
     z-index: 1; 
-    pointer-events: none; /* Ensures the background doesn't block clicks */
+    pointer-events: none; 
 }
 
 .text-element {

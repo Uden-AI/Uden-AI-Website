@@ -3,6 +3,8 @@ const container = document.getElementById('canvas-container');
 const phrases = [
     "Fuck AI",
     "F*ck AI",
+	"F🤖ck AI",
+	"join mastodon",
     "01000110 01010101 01000011 01001011 00100000 01000001 01001001", 
     "46 55 43 4B 20 41 49", 
     "console.log('Fuck AI');",
@@ -10,7 +12,11 @@ const phrases = [
     "def ai(): return 'Fuck'",
     "🖕 AI",
     "System.out.println('Fuck AI');",
-    "Error 404: AI Not Wanted"
+    "Error 404: AI Not Wanted",
+	"don't let creativity die",
+	"say no to AI!",
+	"stop lobotomizing grok",
+	"chatgpt can't operate without stealing"
 ];
 
 // Your custom color palette
