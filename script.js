@@ -21,7 +21,10 @@ const phrases = [
 	"rip aaron swartz",
 	"ai made horrors beyond comprehension",
 	"clanker",
-	"🙏 shrimp jesus 🙏",
+	"the thought counts",
+	"humanity is losing faith in itself",
+	"you ain't no artist",
+	"🙏 shrimp jesus is watching 🙏",
 	"ai induced psychosis",
 	"plagiarism engine",
 	"james somerton would've loved ai",
@@ -47,7 +50,6 @@ function createFloatingText() {
     
     el.innerText = phrases[Math.floor(Math.random() * phrases.length)];
     
-    // Selects a random color from your new list
     const color = colors[Math.floor(Math.random() * colors.length)];
     el.style.color = color;
     el.style.textShadow = `0 0 10px ${color}, 0 0 20px ${color}`; 
@@ -81,7 +83,6 @@ for(let i = 0; i < 60; i++) {
     setTimeout(createFloatingText, Math.random() * 5000);
 }
 
-// Optional: Make the center text cycle through your colors
 const centerText = document.getElementById('center-text');
 setInterval(() => {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];

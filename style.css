@@ -25,13 +25,13 @@ body, html {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    gap: 1vh; /* Using vh keeps the gap tight on smaller laptop screens */
+    gap: 1vh;
     z-index: 10; 
     pointer-events: none; 
 }
 
 #center-text {
-    font-size: clamp(3rem, 8vw, 10rem); /* Scaled down just slightly to leave room for the post */
+    font-size: clamp(3rem, 8vw, 10rem);
     font-weight: bold;
     color: #FF0000; 
     text-shadow: 0 0 20px #FF0000, 0 0 50px #6F003C;
@@ -62,11 +62,8 @@ body, html {
     height: 100vh;
     perspective: 1200px; 
     transform-style: preserve-3d;
-    
     /* Pushes the flying text in front of the Mastodon embed */
     z-index: 999; 
-    
-    /* Crucial: allows clicks to pass through the flying text to the post underneath */
     pointer-events: none; 
 }
 
@@ -108,13 +105,10 @@ body, html {
 }
 /* Style the SVG wordmark and set up the hover animation */
 #mobile-link-icon {
-    width: 220px; /* Widened to account for the 1932x500 aspect ratio */
+    width: 220px; 
     max-width: 80vw; /* Failsafe: prevents it from being wider than 80% of a very narrow phone screen */
     height: auto;
     transition: filter 0.3s ease-in-out; 
-    
-    /* Optional but recommended: gives the white SVG a slight default drop shadow 
-       so it doesn't get lost if a brightly colored text flies perfectly behind it */
     filter: drop-shadow(0 0 5px rgba(0,0,0,0.8));
 }
 
