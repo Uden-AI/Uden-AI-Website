@@ -6,6 +6,7 @@ const phrases = [
 	"F🤖ck AI",
 	"💥🤖",
 	"join mastodon",
+	"chatgpt kills",
     "01000110 01010101 01000011 01001011 00100000 01000001 01001001", 
     "46 55 43 4B 20 41 49", 
     "console.log('Fuck AI');",
@@ -17,9 +18,10 @@ const phrases = [
 	"don't let creativity die",
 	"say no to AI!",
 	"stop lobotomizing grok",
-	"aaron swartz didn't die for this",
+	"rip aaron swartz",
 	"clanker",
-	"chatgpt can't operate without stealing"
+	"piss tint hater",
+	"chatgpt steals"
 ];
 
 // Your custom color palette
