@@ -18,6 +18,7 @@ const phrases = [
 	"say no to AI!",
 	"stop lobotomizing grok",
 	"aaron swartz didn't die for this",
+	"clanker",
 	"chatgpt can't operate without stealing"
 ];
 
