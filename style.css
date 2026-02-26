@@ -106,12 +106,16 @@ body, html {
     pointer-events: auto; /* Makes it clickable */
     z-index: 1000; /* Ensures it stays in front of the flying text */
 }
-
-/* Style the icon and set up the hover animation */
+/* Style the SVG wordmark and set up the hover animation */
 #mobile-link-icon {
-    width: 60px; /* Adjust this size if your icon is too big/small */
+    width: 220px; /* Widened to account for the 1932x500 aspect ratio */
+    max-width: 80vw; /* Failsafe: prevents it from being wider than 80% of a very narrow phone screen */
     height: auto;
-    transition: filter 0.3s ease-in-out; /* Smooth transition for the glow */
+    transition: filter 0.3s ease-in-out; 
+    
+    /* Optional but recommended: gives the white SVG a slight default drop shadow 
+       so it doesn't get lost if a brightly colored text flies perfectly behind it */
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.8));
 }
 
 /* The #FF0000 Red Hover Glow */
