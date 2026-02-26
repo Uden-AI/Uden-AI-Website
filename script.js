@@ -19,13 +19,23 @@ const phrases = [
 	"say no to AI!",
 	"stop lobotomizing grok",
 	"rip aaron swartz",
+	"ai made horrors beyond comprehension",
 	"clanker",
+	"🙏 shrimp jesus 🙏",
+	"ai induced psychosis",
+	"plagiarism engine",
+	"james somerton would've loved ai",
+	"rage against machine learning",
+	"OCCUPY MUSK",
+	"sudo rm -rf /grok",
+	"the monster wears your face",
+	"dead internet reality",
 	"slopholm syndrome",
 	"piss tint hater",
 	"chatgpt steals"
 ];
 
-// Your custom color palette
+// Die Linke colors
 const colors = [
     '#FF0000', '#6F003C', '#004B5B', '#00B19C', 
     '#8100A1', '#D675D8', '#2E4FC4', '#D4D4FF'
