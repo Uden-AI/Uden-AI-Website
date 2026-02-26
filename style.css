@@ -19,14 +19,39 @@ body, html {
     align-items: center;
 }
 
+#content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 1vh; /* Using vh keeps the gap tight on smaller laptop screens */
+    z-index: 10; 
+    pointer-events: none; 
+}
+
 #center-text {
-    font-size: clamp(4rem, 10vw, 12rem); 
+    font-size: clamp(3rem, 8vw, 10rem); /* Scaled down just slightly to leave room for the post */
     font-weight: bold;
     color: #FF0000; 
     text-shadow: 0 0 20px #FF0000, 0 0 50px #6F003C;
-    z-index: 10; 
     text-align: center;
-    pointer-events: none; 
+    margin-top: 2vh;
+}
+
+#embed-container {
+    pointer-events: auto; 
+    width: 100%;
+    max-width: 540px;
+    box-shadow: 0 0 20px rgba(111, 0, 60, 0.3); 
+    border-radius: 8px;
+    
+    /* Shrinks the entire embed to 80% of its normal size */
+    transform: scale(0.8); 
+    transform-origin: top center;
+    
+    /* Pulls the bottom margin up to compensate for the scaled-down size */
+    margin-bottom: -15%; 
 }
 
 #canvas-container {
@@ -37,7 +62,11 @@ body, html {
     height: 100vh;
     perspective: 1200px; 
     transform-style: preserve-3d;
-    z-index: 1; 
+    
+    /* Pushes the flying text in front of the Mastodon embed */
+    z-index: 999; 
+    
+    /* Crucial: allows clicks to pass through the flying text to the post underneath */
     pointer-events: none; 
 }
 

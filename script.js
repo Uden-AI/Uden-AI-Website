@@ -20,6 +20,7 @@ const phrases = [
 	"stop lobotomizing grok",
 	"rip aaron swartz",
 	"clanker",
+	"slopholm syndrome",
 	"piss tint hater",
 	"chatgpt steals"
 ];
