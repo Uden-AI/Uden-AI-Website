@@ -4,6 +4,7 @@ const phrases = [
     "Fuck AI",
     "F*ck AI",
 	"F🤖ck AI",
+	"💥🤖",
 	"join mastodon",
     "01000110 01010101 01000011 01001011 00100000 01000001 01001001", 
     "46 55 43 4B 20 41 49", 
@@ -16,6 +17,7 @@ const phrases = [
 	"don't let creativity die",
 	"say no to AI!",
 	"stop lobotomizing grok",
+	"aaron swartz didn't die for this",
 	"chatgpt can't operate without stealing"
 ];
 
