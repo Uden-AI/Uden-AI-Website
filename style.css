@@ -97,3 +97,46 @@ body, html {
         opacity: 0;
     }
 }
+
+/* --- MOBILE ICON STYLES --- */
+
+/* Hide the mobile icon by default on desktop screens */
+#mobile-icon-container {
+    display: none;
+    pointer-events: auto; /* Makes it clickable */
+    z-index: 1000; /* Ensures it stays in front of the flying text */
+}
+
+/* Style the icon and set up the hover animation */
+#mobile-link-icon {
+    width: 60px; /* Adjust this size if your icon is too big/small */
+    height: auto;
+    transition: filter 0.3s ease-in-out; /* Smooth transition for the glow */
+}
+
+/* The #FF0000 Red Hover Glow */
+#mobile-link-icon:hover {
+    filter: drop-shadow(0 0 15px #FF0000) drop-shadow(0 0 30px #FF0000);
+}
+
+/* --- RESPONSIVE MEDIA QUERY --- */
+
+/* When the screen width is less than 768px (tablets/phones) OR 
+   when the screen height is too short to fit the embed (laptops) */
+@media (max-width: 768px), (max-height: 750px) {
+    
+    /* Hide the giant Mastodon embed */
+    #embed-container {
+        display: none !important;
+    }
+    
+    /* Reveal the mobile icon container */
+    #mobile-icon-container {
+        display: block;
+    }
+
+    /* Optional: Ensure the center text fits a bit better on narrow phone screens */
+    #center-text {
+        font-size: clamp(3rem, 15vw, 10rem); 
+    }
+}
